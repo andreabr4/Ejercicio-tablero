@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio tablero</title>
+</head>
+<body>
+    <script>
+        let tamaño;
+        tamaño = parseInt (prompt ("Introduce un número: "));
+
+        for (let fila = 1; fila<=tamaño; fila=fila + 1){
+            let resultado = ""
+
+            for (let columna = 1; columna<=tamaño; columna=columna +1){
+                if (fila %2 != 0){
+                    if (columna %2 == 0){
+                        resultado = resultado + "X"
+                    }
+                    else{
+                        resultado = resultado + "O"
+                    }
+                }
+                else {
+                    if (columna %2 == 0){
+                        resultado = resultado + "O"
+                    }
+                    else{
+                        resultado = resultado + "X"
+                    }
+                }    
+            } 
+
+            console.log(resultado) 
+           
+        }
+
+         
+    </script>
+</body>
+</html>
